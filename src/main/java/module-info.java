@@ -1,7 +1,8 @@
 module com.example.maze {
     requires javafx.controls;
     requires javafx.fxml;
-    requires de.jensd.fx.glyphs.fontawesome;
+    requires org.kordamp.ikonli.javafx;
+    requires org.kordamp.ikonli.fontawesome5;
 
     requires java.sql;
     requires  org.xerial.sqlitejdbc;

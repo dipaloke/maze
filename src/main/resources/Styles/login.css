@@ -52,6 +52,10 @@
     -fx-font-weight: bold;
 }
 
+.login_logo_container FontIcon {
+    -fx-fill: #FFFFFF;
+}
+
 .input_field {
     -fx-background-color: #FFFFFF;
     -fx-pref-height: 35;
