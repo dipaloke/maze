@@ -2,6 +2,7 @@ module com.example.maze {
     requires javafx.controls;
     requires javafx.fxml;
     requires de.jensd.fx.glyphs.fontawesome;
+
     requires java.sql;
     requires  org.xerial.sqlitejdbc;
 
