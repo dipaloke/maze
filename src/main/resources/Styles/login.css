@@ -14,7 +14,7 @@
     -fx-fill: #FFFFFF;
 }
 
-.login_logo_container FontAwesomeIconView {
+.login_logo_container FontIcon {
     -fx-fill: #ECF39E ;
 }
 
@@ -50,10 +50,6 @@
 .login_form_container Label {
     -fx-font-size: 1.1em;
     -fx-font-weight: bold;
-}
-
-.login_logo_container FontIcon {
-    -fx-fill: #FFFFFF;
 }
 
 .input_field {
