@@ -14,10 +14,14 @@ public class ViewFactory {
     private final StringProperty clientSelectedMenuItem;    //setup view flag to change center pane
     private AnchorPane dashboardView;
     private AnchorPane transectionsView;
+    private AnchorPane accountsView;
 
     public ViewFactory(){
         this.clientSelectedMenuItem = new SimpleStringProperty("");
     }
+    /*
+    * Clients views section
+    * */
 
     public StringProperty getClientSelectedMenuItem() {
         return clientSelectedMenuItem;
@@ -44,6 +48,17 @@ public class ViewFactory {
             }
         }
         return transectionsView;
+    }
+
+    public AnchorPane getAccountsView() {
+        if (accountsView == null) {
+            try {
+                accountsView = new FXMLLoader(getClass().getResource("/Fxml/Client/Accounts.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return accountsView;
     }
 
     public void showLoginWindow() {
