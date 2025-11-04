@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="transections_container"
+            stylesheets="@../../Styles/Transections.css" xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.maze.Controllers.Client.TransectionsController">
+    <Text layoutX="392.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transections"
+          AnchorPane.leftAnchor="349.0" AnchorPane.topAnchor="14.0"/>
+    <ListView fx:id="transections_listview" layoutX="14.0" layoutY="131.0" prefHeight="640.0" prefWidth="830.0"
+              AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="100.0"/>
+</AnchorPane>

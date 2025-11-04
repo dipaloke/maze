@@ -10,6 +10,9 @@ public class ViewFactory {
     //Client View
     private AnchorPane dashboardView;
  // we will have full transections and other things
+    //TODO: Admin view
+    //Client View
+    private AnchorPane transectionsView;
 
     public ViewFactory(){}
 
@@ -23,6 +26,17 @@ public class ViewFactory {
             }
         }
         return dashboardView;
+    }
+
+    public AnchorPane getTransectionsView() {
+        if (transectionsView == null) {
+            try {
+                dashboardView = new FXMLLoader(getClass().getResource("/Fxml/Client/Transections.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return transectionsView;
     }
 
     public void showLoginWindow() {
