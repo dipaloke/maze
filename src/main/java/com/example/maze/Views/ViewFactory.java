@@ -50,4 +50,9 @@ public class ViewFactory {
         stage.show();
     }
 
+//    utility method  to close the state
+    public void closeStage (Stage stage) {
+        stage.close();
+    }
+
 }
