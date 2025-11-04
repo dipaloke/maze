@@ -6,15 +6,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane xmlns="http://javafx.com/javafx"
+<BorderPane fx:id="client_parent" xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml">
-
-
-<!--            fx:controller="com.example.maze.Controllers.Client.ClientController"-->
-<!--            prefHeight="400.0" prefWidth="600.0"-->
-<!--&gt;-->
-
-
     <left>
         <fx:include source="ClientMenu.fxml" />
     </left>

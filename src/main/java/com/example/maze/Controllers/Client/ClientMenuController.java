@@ -1,5 +1,6 @@
 package com.example.maze.Controllers.Client;
 
+import com.example.maze.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
@@ -16,6 +17,20 @@ public class ClientMenuController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        add_listeners();
     }
+
+    private void add_listeners() {
+        dashboard_btn.setOnAction(event -> onDashboard());
+        transection_btn.setOnAction(event -> onTransections());
+    }
+
+    private void onDashboard() {
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Dashboard");
+    }
+    private void onTransections() {
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Transections");
+    }
+
+
 }
