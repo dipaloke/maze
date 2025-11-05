@@ -7,6 +7,8 @@ module com.example.maze {
     requires java.sql;
     requires  org.xerial.sqlitejdbc;
     requires java.desktop;
+    requires javafx.graphics;
+//    requires com.example.maze;
 
 
     opens com.example.maze to javafx.fxml;

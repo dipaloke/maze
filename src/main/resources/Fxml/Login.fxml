@@ -13,7 +13,7 @@
     <VBox layoutY="3.0" prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
 
 <!--        <FontAwesomeIconView glyphName="BANK" size="30" />-->
-        <FontIcon iconLiteral="fas-university" iconSize="40" styleClass="logo_icon" />
+        <FontIcon iconLiteral="fas-dice-d20" iconSize="40" styleClass="logo_icon" text="" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NAAS" />
     </VBox>
     <VBox layoutX="337.0" layoutY="80.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
@@ -24,6 +24,7 @@
         <Label fx:id="password_lbl" text="Password" />
         <TextField fx:id="password_fld" styleClass="input_field" />
         <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
+      <Button fx:id="registration_btn" mnemonicParsing="false" text="Registration" />
         <Label fx:id="error_lbl" styleClass="error_lbl" />
     </VBox>
     <!--             <FontAwesomeIconView glyphName="USER" />-->

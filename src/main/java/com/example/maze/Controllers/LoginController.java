@@ -19,11 +19,13 @@ public class LoginController implements Initializable {
     public TextField password_fld;
     public Button login_btn;
     public Label error_lbl;
+    public Button registration_btn;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         //creating single tone (if user clicks login button we want to go to view fectory and show cliwnt window )
         login_btn.setOnAction(event -> onLogin());
+        registration_btn.setOnAction(event -> onRegistration());
     }
 
     //functionality the close the login state (initially simple)
@@ -32,4 +34,12 @@ public class LoginController implements Initializable {
         Model.getInstance().getViewFactory().closeStage(stage);
         Model.getInstance().getViewFactory().showClientWindow();
     }
+
+    private void onRegistration () {
+        Stage stage = (Stage) error_lbl.getScene().getWindow();
+        Model.getInstance().getViewFactory().closeStage(stage);
+        Model.getInstance().getViewFactory().showRegistrationWindow();
+    }
+
+    //
 }

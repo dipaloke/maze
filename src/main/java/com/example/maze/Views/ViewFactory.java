@@ -65,6 +65,12 @@ public class ViewFactory {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
         createStage(loader);
     }
+
+    public void showRegistrationWindow() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Registration.fxml"));
+        createStage(loader);
+    }
+
     public void showClientWindow() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Client/Client.fxml"));
         ClientController clientController = new ClientController();
@@ -72,6 +78,7 @@ public class ViewFactory {
 
         createStage(loader);
     }
+
 
     private void createStage(FXMLLoader loader){
         Scene scene = null;
