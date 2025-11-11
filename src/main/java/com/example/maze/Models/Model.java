@@ -5,6 +5,8 @@ import com.example.maze.Views.ViewFactory;
 
 public class Model {
     private static Model model;
+    private String jwtToken;
+
     private final ViewFactory viewFactory;
 
     private Model() {
@@ -21,4 +23,14 @@ public class Model {
     public ViewFactory getViewFactory() {
         return viewFactory;
     }
+
+    public String getJwtToken() {
+        return jwtToken;
+    }
+
+    public void  setJwtToken(String jwtToken) {
+        this.jwtToken = jwtToken;
+    }
+
+
 }
