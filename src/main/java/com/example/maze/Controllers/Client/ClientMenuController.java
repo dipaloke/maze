@@ -53,5 +53,4 @@ public class ClientMenuController implements Initializable {
         Model.getInstance().getViewFactory().showLoginWindow();
     }
 
-
 }
