@@ -19,7 +19,7 @@
 
     <!-- Profile Picture Placeholder -->
     <Circle fx:id="profile_pic" fill="#253F25" radius="40" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="90.0" />
-    <Text fx:id="profile_initials" style="-fx-fill: #FFFFFF; -fx-font-size: 2em;" text="JD" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="115.0" />
+    <Text fx:id="profile_initials" layoutX="57.0" layoutY="139.0" style="-fx-fill: #FFFFFF; -fx-font-size: 2em;" text="JD" AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="113.1015625" />
 
     <!-- Form Section -->
     <VBox spacing="10" styleClass="new_trans_container" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="90.0">

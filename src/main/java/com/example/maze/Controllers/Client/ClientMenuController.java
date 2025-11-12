@@ -26,6 +26,7 @@ public class ClientMenuController implements Initializable {
         transection_btn.setOnAction(event -> onTransections());
         accounts_btn.setOnAction(event -> onAccounts());
         logout_btn.setOnAction(actionEvent -> onLogout());
+        profile_btn.setOnAction(event -> onProfile());
     }
 
     private void onDashboard() {
@@ -36,6 +37,9 @@ public class ClientMenuController implements Initializable {
         Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Transections");
 
     }
+
+    private void onProfile() {Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Profile");}
+
     private void onAccounts() {
         Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Accounts");
     }

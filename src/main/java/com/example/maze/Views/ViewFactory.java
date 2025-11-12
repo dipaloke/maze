@@ -4,6 +4,7 @@ import com.example.maze.Controllers.Client.ClientController;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -15,6 +16,7 @@ public class ViewFactory {
     private AnchorPane dashboardView;
     private AnchorPane transectionsView;
     private AnchorPane accountsView;
+    private AnchorPane profileView;
 
     public ViewFactory(){
         this.clientSelectedMenuItem = new SimpleStringProperty("");
@@ -59,6 +61,17 @@ public class ViewFactory {
             }
         }
         return accountsView;
+    }
+
+    public AnchorPane getClientProfileView() {
+
+            try {
+                profileView = new FXMLLoader(getClass().getResource("/Fxml/Client/ClientProfile.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        return profileView;
     }
 
     public void showLoginWindow() {

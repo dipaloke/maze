@@ -65,7 +65,7 @@ public class HttpClientHelper {
     public static Map getprofile(String token) throws  Exception {
         String url = BASE_URL + "/employees/me";
         HttpGet get = new HttpGet(url);
-        get.setHeader("Authentication", "Bearer " + token);
+        get.setHeader("Authorization", "Bearer " + token);
 
         HttpClient client = HttpClients.createDefault();
         ClassicHttpResponse response = (ClassicHttpResponse) client.execute(get);
@@ -88,7 +88,7 @@ public class HttpClientHelper {
         HttpPatch patch = new HttpPatch(url);
         patch.setEntity(new StringEntity(json, StandardCharsets.UTF_8));
         patch.setHeader("Content-Type", "application/json");
-        patch.setHeader("Authentication", "Bearer " + token);
+        patch.setHeader("Authorization", "Bearer " + token);
 
         HttpClient client = HttpClients.createDefault();
         ClassicHttpResponse response = (ClassicHttpResponse) client.execute(patch);
