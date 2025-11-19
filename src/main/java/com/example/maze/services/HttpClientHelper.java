@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HttpClientHelper {
-    private  static  final String BASE_URL = "http://localhost:3000/api";
+    private  static  final String BASE_URL = "http://192.168.44.232:8887/api";
     private static  final ObjectMapper mapper = new ObjectMapper();
 
     public  static String login(String email, String password) throws  Exception {
